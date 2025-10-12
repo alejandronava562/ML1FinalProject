@@ -1,3 +1,6 @@
 import streamlit as st
-import pandas as pd
-from "../pages/
+
+from utils import load_uci_model
+
+df = load_uci_model()
+st.write(df.head())
