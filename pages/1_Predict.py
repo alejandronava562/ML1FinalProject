@@ -9,7 +9,7 @@ st.set_page_config(page_title="Student Grade Predict Page", layout="wide")
 st.title("Student Grade AI Predictor")
 
 # --- Load the trained model --- #
-@st.cache.data
+@st.cache_data
 def load_uci_model():
     ds = fetch_ucirepo(id=320)
     x = ds.data.features
@@ -19,6 +19,7 @@ def load_uci_model():
     return df
 
 df = load_uci_model()
+st.write(df.head())
 
 
 # --- Form for user input --- #
