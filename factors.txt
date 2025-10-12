@@ -1,0 +1,10 @@
+factors to train the model off of
+
+models: 
+Regression
+
+factors:
+14: studytime
+15: past failures
+30: abcenses
+31-33: final grades

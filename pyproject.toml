@@ -5,9 +5,10 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.10.0,<3.11"
+python = ">=3.11.0,<4.0"
 streamlit = "^1.27.2"
 ucimlrepo = "^0.0.7"
+scikit-learn = "^1.7.2"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md
