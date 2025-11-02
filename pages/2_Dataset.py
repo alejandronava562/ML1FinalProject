@@ -56,10 +56,20 @@ if len(x_options) > 0:
   pass_line = alt.Chart(pass_line_df).mark_rule().encode(y="y")
 
 st.altair_chart(plot)
+
       
-    
+# --- Histogram --- #
+st.write("---") 
+st.subheader("Histogram (G3 Distribution)")
+if "G3" in df.columns:
+  hist = (alt.Chart(df).mark_bar().encode(
+    x=alt.X("G3:Q",bin = alt.Bin(maxbins = 20), title="G3"),
+    y=alt.Y("count()",title = "Count"),
+    ).properties(height=200)
+  )
+  st.altair_chart(hist,use_container_width=True)
 
+  
 
-## --- Correlation with G3 (Final Grade) --- ##
 
   
