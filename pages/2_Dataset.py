@@ -54,10 +54,8 @@ if len(x_options) > 0:
   )
   pass_line_df = pd.DataFrame({"y": [10]})
   pass_line = alt.Chart(pass_line_df).mark_rule().encode(y="y")
-  
-  st.altair_chart(plot)
-else:
-  st.warning("No compatible features found for plotting.")
+
+st.altair_chart(plot)
       
     
 
