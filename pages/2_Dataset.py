@@ -68,6 +68,7 @@ if "G3" in df.columns:
     ).properties(height=200)
   )
   st.altair_chart(hist,use_container_width=True)
+  st.write("text")
 
   
 
